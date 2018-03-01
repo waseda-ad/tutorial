@@ -1,0 +1,51 @@
+.obj1,
+.obj2,
+.obj3 {
+  display: block;
+  position: relative;
+  background: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 200px auto;
+}
+
+
+
+/*
+*
+* CSS Transition × hover
+*
+*/
+
+.obj1 {
+  transition: 1s ease; /* トランジションの設定 */
+  transform: translateX(0px); /* 変化させるプロパティ */
+}
+
+.obj1:hover {
+ transform: translateX(100px);/* 変化させるプロパティ */
+}
+
+
+
+/*
+*
+* CSS Animation
+*
+*/
+
+
+.obj2 {
+  animation: floating 1s linear infinite alternate;
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}

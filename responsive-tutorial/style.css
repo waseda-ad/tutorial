@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.wrapper {
+  background: gray;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+  background: lightgray;
+}
+
+.item-container {
+  background: inherit;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: block;
+  float: left;
+}
+
+.item {
+  position: absolute;
+  background: white;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+/* デスクトップ　： 1000px以上 */
+@media screen and (min-width:1000px) {
+ .container {
+   width: 800px;
+ }
+}
+
+/* タブレット：700px以上 */
+@media screen and (min-width:700px) and (max-width:1000px) {
+  .container {
+    width: 600px;
+  }
+}
+
+/* スマートフォン：700px以下 */
+@media screen and (max-width:700px) {
+  .container {
+    width: 400px;
+  }
+}
